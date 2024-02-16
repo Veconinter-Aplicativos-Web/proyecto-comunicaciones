@@ -1,0 +1,44 @@
+
+#background{
+    position: fixed;
+    z-index: 1;
+}
+
+#background-2{
+    position: fixed;
+    height: 100px;
+    z-index: 2;
+}
+
+#container-fluid-contact-us{
+    padding: 0px;
+}
+
+#contact-us-container{
+    position: relative;
+
+}
+
+.breaking-barriers-img{
+    position: absolute; 
+    top: 150px; 
+    left: 47%; 
+    width: 47%; 
+    z-index: 2;
+}
+
+.is-what-we-do--img{
+    position: absolute; 
+    top: 150px; 
+    left: 47%; 
+    width: 47%; 
+    z-index: 2;
+}
+
+.we-do-img{
+    position: absolute; 
+    top: 150px; 
+    left: 47%; 
+    width: 47%; 
+    z-index: 2;    
+}

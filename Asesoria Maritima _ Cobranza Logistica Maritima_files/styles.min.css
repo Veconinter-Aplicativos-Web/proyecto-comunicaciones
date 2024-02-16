@@ -70,7 +70,7 @@ a:hover{color:#044F73;text-decoration:none;-webkit-transition:all 0.2s ease !imp
 }
 #navigation_bar{margin-left:0;margin-right:0;opacity:0.7;-webkit-transition:all 0.4s ease !important;-moz-transition:all 0.4s ease !important;-o-transition:all 0.4s ease !important;-ms-transition:all 0.4s ease !important;transition:all 0.4s ease !important;}
 #navigation_bar:hover{opacity:1;-webkit-transition:all 0.4s ease !important;-moz-transition:all 0.4s ease !important;-o-transition:all 0.4s ease !important;-ms-transition:all 0.4s ease !important;transition:all 0.4s ease !important;}
-.content_section.bg-fixed.inwhite.bg3{top:-1px;}
+.content_section.bg-fixed.inwhite.bg3{top:59px;}
 .inwhite .div-icons_con.style1 .div-serv .desc, .inwhite .div-icons_con.style2 .div-serv .desc{font-weight:400;}
 .light_header .topmenu-social span.socialn:after, .light_header .topmenu-social span.socialn:before, .light_header .topmenu-social > a > span.socialn{background:#044F73;color:#fff;}
 .bg_color_v{background-color:rgba(0,0,0,0.4);}
