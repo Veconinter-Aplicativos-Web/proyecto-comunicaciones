@@ -27,18 +27,18 @@
     z-index: 2;
 }
 
-.is-what-we-do--img{
+.is-what-img{
     position: absolute; 
-    top: 150px; 
-    left: 47%; 
-    width: 47%; 
+    top: 403px; 
+    left: 49%; 
+    width: 18%; 
     z-index: 2;
 }
 
 .we-do-img{
     position: absolute; 
-    top: 150px; 
-    left: 47%; 
-    width: 47%; 
-    z-index: 2;    
+    top: 399px;
+    left: 77%;
+    width: 15%;
+    z-index: 2;
 }
