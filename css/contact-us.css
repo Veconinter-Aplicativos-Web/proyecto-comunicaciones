@@ -22,7 +22,7 @@
 .breaking-barriers-img{
     position: absolute; 
     top: 150px; 
-    left: 47%; 
+    left: 50%; 
     width: 47%; 
     z-index: 2;
 }
@@ -30,7 +30,7 @@
 .is-what-img{
     position: absolute; 
     top: 403px; 
-    left: 49%; 
+    left: 52%; 
     width: 18%; 
     z-index: 2;
 }
@@ -38,7 +38,47 @@
 .we-do-img{
     position: absolute; 
     top: 399px;
-    left: 77%;
+    left: 79%;
     width: 15%;
     z-index: 2;
+}
+
+.div-form{
+    width: 527px;
+    height: 600px;
+    background-color: #ab1d21;
+    position: absolute;
+    top: 150px;
+    left: 9%;
+    z-index: 2;
+    border-radius: 45px;
+
+}
+
+.form-control{
+    height: 60px;
+}
+
+.border-radius-form{
+    border-radius: 50px !important;
+}
+
+.text-white{
+    color:white;
+}
+
+.btn-contact-us{
+    background-color: white !important;
+    color:#ab1d21;
+    font-weight : bold ;
+    text-transform: uppercase;
+
+}
+
+
+::placeholder{
+    font-size: 15px;
+    color:#ab1d21;
+    font-weight : bold ;
+
 }
