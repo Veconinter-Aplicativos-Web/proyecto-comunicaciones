@@ -57,6 +57,8 @@
 
 .form-control{
     height: 60px;
+    color: #999999;
+    font-weight : bold;
 }
 
 .border-radius-form{
@@ -76,9 +78,9 @@
 }
 
 
+
 ::placeholder{
     font-size: 15px;
     color:#ab1d21;
-    font-weight : bold ;
-
+    font-weight : bold;
 }
