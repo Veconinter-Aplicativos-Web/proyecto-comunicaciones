@@ -1,62 +1,64 @@
 
-#background{
-    position: fixed;
-    z-index: 1;
-}
-
-#background-2{
-    position: fixed;
-    height: 100px;
-    z-index: 2;
-}
-
-#container-fluid-contact-us{
-    padding: 0px;
-}
-
-#contact-us-container{
-    position: relative;
-
-}
-
-.breaking-barriers-img{
+/*
+  .breaking-barriers-img{
     position: absolute; 
-    top: 150px; 
+    top: 23vh; 
     left: 50%; 
     width: 47%; 
-    z-index: 2;
 }
 
 .is-what-img{
     position: absolute; 
-    top: 403px; 
+    top: 58vh; 
     left: 52%; 
     width: 18%; 
-    z-index: 2;
 }
 
 .we-do-img{
     position: absolute; 
-    top: 399px;
+    top: 58vh;
     left: 79%;
     width: 15%;
-    z-index: 2;
+}
+*/
+
+.breaking-barriers-img{
+    margin-top:20%;
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 8%;
+
 }
 
+
+.is-what-img{
+    margin-top: 10%;
+    width: 70%;
+    margin-left: 16%;
+}
+
+.we-do-img{
+    margin-top: 9%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+
 .div-form{
-    width: 527px;
-    height: 600px;
+  
     background-color: #ab1d21;
-    position: absolute;
-    top: 150px;
-    left: 9%;
-    z-index: 2;
     border-radius: 45px;
+    margin-top:20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 
 }
 
 .form-control{
-    height: 60px;
+    height: 10vh;
     color: #999999;
     font-weight : bold;
 }
@@ -77,10 +79,50 @@
 
 }
 
-
+.btn-size{
+    height: 10vh; 
+    width: 18vh;
+}
+    
 
 ::placeholder{
     font-size: 15px;
     color:#ab1d21;
     font-weight : bold;
+}
+
+.br-display{
+    display: block;
+}
+
+.br-display-small{
+    display: none;
+}
+
+.border-radius-form{
+    border-radius: 50px !important;
+}
+
+.text-white{
+    color:white;
+}
+
+.btn-contact-us{
+    background-color: white !important;
+    color:#ab1d21;
+    font-weight : bold ;
+    text-transform: uppercase;
+
+}
+
+::placeholder{
+    font-size: 15px;
+    color:#ab1d21;
+    font-weight : bold;
+}
+
+.div-row{
+    background-image: url("../img/background-comercial.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
