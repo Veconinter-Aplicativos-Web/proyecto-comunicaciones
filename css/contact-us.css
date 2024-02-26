@@ -126,6 +126,12 @@
         margin-bottom: -2%;
     }
 
+    .p-header{
+        margin-bottom: 3%;
+        margin-left: 4.5%;
+        margin-right: 4.5%;
+    }
+
 }
 
 
@@ -136,16 +142,15 @@
         margin-bottom: -2%;
     }
 
+    .p-header{
+        margin-bottom: 3%;
+    }
+
 }
 
 .header-h2-sm{
     font-size: 7vh;
     margin-bottom: -2%;
-}
-
-.p-header{
-    margin-bottom: 3%;
-
 }
 
 .persona-img{
