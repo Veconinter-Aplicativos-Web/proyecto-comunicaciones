@@ -656,15 +656,29 @@
 							</div>
 		
 							<div class="form-group col-md-12">
-								<input placeholder="Email*" id="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"  name="email" type="email" class="form-control border-radius-form" required/>
+								<input placeholder="Email*" id="email"  name="email" type="email" class="form-control border-radius-form" required/>
 							</div>
-						
+							<!--Validación EMAIL-->
+							<script>
+								const emailInput = document.getElementById('email');
+								const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+				
+									emailInput.addEventListener('input', () => {
+									const isValid = emailPattern.test(emailInput.value);
+									if (!isValid) {
+										emailInput.setCustomValidity('Este email no es válido');
+									} else {
+										emailInput.setCustomValidity('');
+									}
+									});
+							</script>
+							<!-- fin Validación EMAIL-->
 							<div class="form-group col-sm-6 col-md-3">
-								<input placeholder="Cod. país*" id="00N8B00000EKkP9" name="00N8B00000EKkP9" size="20" type="text" class="form-control border-radius-form" required/>
+								<input placeholder="Cod. país*" pattern="[0-9]+" id="00N8B00000EKkP9" name="00N8B00000EKkP9" size="20" type="number" class="form-control border-radius-form" required/>
 							</div>
 		
 							<div class="form-group col-sm-6 col-md-9">
-								<input placeholder="Teléfono*"  id="phone" maxlength="40" name="phone" size="20" type="text" class="form-control border-radius-form" required />
+								<input placeholder="Teléfono*" pattern="[0-9]+" id="phone" maxlength="40" name="phone" size="20" type="number" class="form-control border-radius-form" required />
 							</div>
 		
 							<div class="form-group col-md-12">
@@ -687,7 +701,7 @@
 					</form>
 				</div>
 			</div>
-			
+
 			<div class="col-lg-6 visible-lg">
 				<img class="img-responsive breaking-barriers-img" src="https://veconinter.s3.amazonaws.com/veconinter-web/Breaking-Barriers.png" alt="Imagen de fondo"/>
 
