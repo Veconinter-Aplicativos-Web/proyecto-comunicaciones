@@ -674,11 +674,13 @@
 							</script>
 							<!-- fin Validación EMAIL-->
 							<div class="form-group col-sm-6 col-md-3">
-								<input placeholder="Cod. país*" pattern="[0-9]+" id="00N8B00000EKkP9" name="00N8B00000EKkP9" size="20" type="number" class="form-control border-radius-form" required/>
+								<input placeholder="Cod. país*" pattern="^[0-9]+$" id="00N8B00000EKkP9" max="9999" name="00N8B00000EKkP9" size="20" type="number" class="form-control border-radius-form" required/>
 							</div>
-		
+							<script>
+
+							</script>
 							<div class="form-group col-sm-6 col-md-9">
-								<input placeholder="Teléfono*" pattern="[0-9]+" id="phone" maxlength="40" name="phone" size="20" type="number" class="form-control border-radius-form" required />
+								<input placeholder="Teléfono*" pattern="[0-9]" id="phone" maxlength="50" name="phone" size="20" type="number" class="form-control border-radius-form" required />
 							</div>
 		
 							<div class="form-group col-md-12">
@@ -940,21 +942,14 @@
 		</div>
 	  </div>
 	</div>
-	<script>
-	  (function(b, o, i, l, e, r) {
-		b.GoogleAnalyticsObject = l;
-		b[l] || (b[l] = function() {
-		  (b[l].q = b[l].q || []).push(arguments)
-		});
-		b[l].l = +new Date;
-		e = o.createElement(i);
-		r = o.getElementsByTagName(i)[0];
-		e.src = '//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e, r)
-	  }(window, document, 'script', 'ga'));
-	  ga('create', 'UA-61420292-1');
-	  ga('send', 'pageview');
-	</script>
+	<!-- Google tag (gtag.js) --> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GJDRMQCHM"></script>
+	<script>   
+		window.dataLayer = window.dataLayer || [];   
+		function gtag(){dataLayer.push(arguments);}   
+		gtag('js', new Date());   
+		gtag('config', 'G-6GJDRMQCHM'); 
+		</script>
 	<script type="text/javascript">
 	  window._mfq = window._mfq || [];
 	  (function() {
