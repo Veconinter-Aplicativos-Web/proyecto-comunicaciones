@@ -3,7 +3,7 @@
 <html>
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6Ld0tZQpAAAAAPwsRvdZ-quAuSdg0dUb4rA8jctH"></script>
 	<script type="text/javascript" src="//slider.veconinter.com/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
 	<script type="text/javascript" src="//slider.veconinter.com/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script>
 	<script type="text/javascript" src="//slider.veconinter.com/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
@@ -691,18 +691,17 @@
 							</div>		
 		
 							<div class="form-group col-md-12 text-center border-radius-form">		
-								<button class="g-recaptcha btn btn-contact-us border-radius-form btn-size"
-								data-sitekey="6Ld0tZQpAAAAAPwsRvdZ-quAuSdg0dUb4rA8jctH"
-								data-callback='onSubmit'
-								data-action='submit'>
-							  Enviar
-							  </button>
+								<div class="form-group col-md-12 text-center border-radius-form">					
+									<input class="btn btn-contact-us border-radius-form btn-size" type="submit" name="submit" style="">
+								</div>
 							</div>
 
 							<script>
-								function onSubmit(token) {
-								  	var form = document.getElementById("form-google");
-								  	form.submit();
+								function onClick(e) {
+								  e.preventDefault();
+								  grecaptcha.enterprise.ready(async () => {
+									const token = await grecaptcha.enterprise.execute('6Ld0tZQpAAAAAPwsRvdZ-quAuSdg0dUb4rA8jctH', {action: 'Breaking Barriers'});
+								  });
 								}
 							</script>
 						</div>
