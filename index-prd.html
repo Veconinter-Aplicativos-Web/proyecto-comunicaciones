@@ -21,6 +21,19 @@
 		z-index: 100000;
 	  }
 
+	  #salesForce {
+            position: fixed;
+            bottom: 25px;
+            right: 40px;
+			background-color: transparent;
+            background-image: url('../img/icon-veco.png'); /* Reemplaza con la ruta a tu imagen */
+            background-size: cover; /* Asegura que la imagen cubra todo el botón */
+            border: none;
+            width: 50px; /* Ajusta al tamaño de tu imagen */
+            height: 50px; /* Ajusta al tamaño de tu imagen */
+            cursor: pointer;
+        }
+
 	  @keyframes spinner {
 		0% {
 		  transform: scale(0.8);
@@ -78,7 +91,6 @@
 	<meta name="keywords" content="logistica maritima, asesoria maritima, servicio de administracion maritima">
 	<link rel="shortcut icon" href="https://www.veconinter.com/img/favicon.png" type="image/x-icon">
 	<script src="./Asesoria Maritima _ Cobranza Logistica Maritima_files/analytics.js.descarga"></script>
-	<script async="" src="./Asesoria Maritima _ Cobranza Logistica Maritima_files/default" charset="UTF-8" crossorigin="*"></script>
 	<script src="chrome-extension://nngceckbapebfimnlniiiahkandclblb/content/fido2/page-script.js" id="bw-fido2-page-script"></script>
 	<style></style>
 	<style></style>
@@ -883,6 +895,9 @@
 		</div>
 	  </footer>
 	</div>
+
+	<button id="salesForce" onclick="openSalesForce()"></button>
+
 	<script type="text/javascript" src="./Asesoria Maritima _ Cobranza Logistica Maritima_files/all.min.js.descarga"></script>
 	<script type="text/javascript" src="./Asesoria Maritima _ Cobranza Logistica Maritima_files/jquery.themepunch.tools.min.js.descarga"></script>
 	<script type="text/javascript" src="./Asesoria Maritima _ Cobranza Logistica Maritima_files/jquery.themepunch.revolution.min.js.descarga"></script>
@@ -891,18 +906,50 @@
 		lazyload();
 	  });
 	</script>
-	<script type="text/javascript">
-	  var Tawk_API = Tawk_API || {},
-		Tawk_LoadStart = new Date();
-	  (function() {
-		var s1 = document.createElement("script"),
-		  s0 = document.getElementsByTagName("script")[0];
-		s1.async = true;
-		s1.src = 'https://embed.tawk.to/5720f0d4139d76a972c7471c/default';
-		s1.charset = 'UTF-8';
-		s1.setAttribute('crossorigin', '*');
-		s0.parentNode.insertBefore(s1, s0);
-	  })();
+	<!--Start of Tawk.to Script-->
+	<script type='text/javascript'>
+			function initEmbeddedMessaging() {
+			try {
+				embeddedservice_bootstrap.settings.language = 'es_MX'; // For example, enter 'en' or 'en-US'
+				embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
+
+				embeddedservice_bootstrap.init(
+					'00D5e0000011Ftq',
+					'Veconinter',
+					'https://sf-veconinter.my.site.com/ESWVeconinter1717613557894',
+					{
+						scrt2URL: 'https://sf-veconinter.my.salesforce-scrt.com'
+					}
+				);
+			} catch (err) {
+				console.error('Error loading Embedded Messaging: ', err);
+			}
+		};
+
+		function openSalesForce() {
+			embeddedservice_bootstrap.utilAPI.launchChat()
+				.then(() => {
+					// Success handler used to perform actions
+					// when the chat client launches successfully.
+					// For example, create a method that disables the launch chat button.
+					embeddedservice_bootstrap.utilAPI.disableLaunchChatButton();
+				}).catch(() => {
+					// Error handler used to perform actions
+					// if the chat client fails to launch.
+					// For example, create a method that hides the launch chat button.
+					embeddedservice_bootstrap.utilAPI.hideChatButton();
+				}).finally(() => {
+					// Finally handler used to perform any clean-up actions
+					// regardless of whether the chat client launches successfully or not.
+					// For example, create a method that logs the user’s attempt to chat.
+					embeddedservice_bootstrap.utilAPI.logEndUserAttemptToChat();
+				});	}
+	</script>
+	<script type='text/javascript' src='https://sf-veconinter.my.site.com/ESWVeconinter1717613557894/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+	
+	<script>
+
+		</script><!--End of Tawk.to Script-->
 	</script>
 	<div id="eBook" class="modal fade" role="dialog">
 	  <div id="contact" class="modal fade" role="dialog">
